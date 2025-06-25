@@ -155,7 +155,7 @@ export default function GameList({ setMyGameList, data, loading, error }) {
                           <p className="font-light text-md">Jugado</p>
                           <img
                             className="w-6 h-6 object-contain bg-[#AED581] hover:bg-[#bddb9a] hover:cursor-pointer rounded-full"
-                            src="../src/assets/icons8-más-100.png"
+                            src="/assets/icons8-más-100.png"
                             loading="lazy"
                           ></img>
                         </button>
@@ -186,7 +186,7 @@ export default function GameList({ setMyGameList, data, loading, error }) {
                           <p className="font-light text-md">Pendiente</p>
                           <img
                             className="w-6 h-6 bg-[#FFF176] hover:bg-[#fff7af] hover:cursor-pointer rounded-full"
-                            src="../src/assets/icons8-más-100.png"
+                            src="/assets/icons8-más-100.png"
                           ></img>
                         </button>
                         <button
@@ -217,7 +217,7 @@ export default function GameList({ setMyGameList, data, loading, error }) {
                           <p className="font-light text-md">Jugando</p>
                           <img
                             className="w-6 h-6 bg-[#E573C3] hover:bg-[#ff9ae1] hover:cursor-pointer rounded-full"
-                            src="../src/assets/icons8-más-100.png"
+                            src="/assets/icons8-más-100.png"
                           ></img>
                         </button>
                       </div>

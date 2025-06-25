@@ -25,7 +25,7 @@ export default function MyGames({ myGamesList, setMyGameList, setVisible }) {
             >
               <img
                 className="w-5 float-right mr-3 object-contain opacity-80 hover:opacity-100 transition-opacity duration-200"
-                src="../src/assets/eliminar.png"
+                src="/assets/eliminar.png"
               ></img>
             </button>
           </CardTitle>
@@ -72,41 +72,47 @@ export default function MyGames({ myGamesList, setMyGameList, setVisible }) {
           <div className="flex flex-col gap-2 w-full h-full p-1   overflow-y-scroll">
             <AnimatePresence>
               {valorListaJuego === "jugado"
-                ? myGamesList.jugados.map((val, index) => ( //iteracion por myGamesList
-                    <motion.div
-                      key={val}
-                      initial={{ opacity: 0, y: 100 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.5,
-                        ease: "easeInOut",
-                        delay: index * 0.1,
-                      }}
-                      className="bg-[#cfcfcf6b] rounded-xl p-2.5 flex gap-4 items-center mb-2"
-                    >
-                      <p className="w-full font-rajdhani font-medium text-xl">
-                        {val}
-                      </p>
-                      <button
-                        className="max-w-6 max-h-6 hover:cursor-pointer"
-                        onClick={() =>
-                          setMyGameList((prev) => ({ //actualizacion de myGamesList
-                            ...prev,
-                            jugados: prev.jugados.filter(
-                              (name) => name !== val
-                            ),
-                          }))
-                        }
+                ? myGamesList.jugados.map(
+                    (
+                      val,
+                      index //iteracion por myGamesList
+                    ) => (
+                      <motion.div
+                        key={val}
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.5,
+                          ease: "easeInOut",
+                          delay: index * 0.1,
+                        }}
+                        className="bg-[#cfcfcf6b] rounded-xl p-2.5 flex gap-4 items-center mb-2"
                       >
-                        <img
-                          className="w-8 object-contain"
-                          src="../src/assets/icons8-basura-24.png"
-                          alt="Eliminar"
-                          title="Eliminar Juego de jugado"
-                        />
-                      </button>
-                    </motion.div>
-                  ))
+                        <p className="w-full font-rajdhani font-medium text-xl">
+                          {val}
+                        </p>
+                        <button
+                          className="max-w-6 max-h-6 hover:cursor-pointer"
+                          onClick={() =>
+                            setMyGameList((prev) => ({
+                              //actualizacion de myGamesList
+                              ...prev,
+                              jugados: prev.jugados.filter(
+                                (name) => name !== val
+                              ),
+                            }))
+                          }
+                        >
+                          <img
+                            className="w-8 object-contain"
+                            src="/assets/icons8-basura-24.png"
+                            alt="Eliminar"
+                            title="Eliminar Juego de jugado"
+                          />
+                        </button>
+                      </motion.div>
+                    )
+                  )
                 : null}
             </AnimatePresence>
             <AnimatePresence>
@@ -142,7 +148,7 @@ export default function MyGames({ myGamesList, setMyGameList, setVisible }) {
                       >
                         <img
                           className="object-contain bg-[#E573C3] rounded-full"
-                          src="../src/assets/icons8-más-100.png"
+                          src="/assets/icons8-más-100.png"
                           title="Pasar juego a jugando"
                         ></img>
                       </button>
@@ -159,7 +165,7 @@ export default function MyGames({ myGamesList, setMyGameList, setVisible }) {
                       >
                         <img
                           className="w-8 object-contain hover:cursor-pointer"
-                          src="../src/assets/icons8-basura-24.png"
+                          src="/assets/icons8-basura-24.png"
                           title="Eliminar Juego de pendiente"
                         ></img>
                       </button>
@@ -200,7 +206,7 @@ export default function MyGames({ myGamesList, setMyGameList, setVisible }) {
                       >
                         <img
                           className="object-contain bg-[#bddb9a] rounded-full hover:cursor-pointer"
-                          src="../src/assets/icons8-más-100.png"
+                          src="/assets/icons8-más-100.png"
                           title="Pasar juego a jugado"
                         ></img>
                       </button>
@@ -217,7 +223,7 @@ export default function MyGames({ myGamesList, setMyGameList, setVisible }) {
                       >
                         <img
                           className="w-8 object-contain hover:cursor-pointer"
-                          src="../src/assets/icons8-basura-24.png"
+                          src="/assets/icons8-basura-24.png"
                           title="Eliminar juego de jugando"
                         ></img>
                       </button>
