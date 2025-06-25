@@ -1,0 +1,100 @@
+// Menu items.
+export const items = [
+  {
+    title: "PlayStation",
+    url: "../src/assets/icons8-play-station-144.png",
+    width: "w-15",
+    id: "27",
+  },
+  {
+    title: "Xbox",
+    url: "../src/assets/icons8-xbox-96 (2).png",
+    width: "w-12",
+    id: "80",
+     background:"",
+  },
+  {
+    title: "PC",
+    url: "../src/assets/vecteezy_rgb-pc-case-with-vibrant-lighting-displays-powerful-performance_56421452.png",
+    width: "w-20",
+    id: "4",
+     background:"",
+  },
+  {
+    title: "Nintendo",
+    url: "../src/assets/nintendo.png",
+    width: "w-15",
+    id: "7",
+  },
+  {
+    title: "iOS",
+    url: "../src/assets/icons8-logo-de-ios-100.png",
+    width: "w-15",
+    background:"invert sepia saturate-200 hue-rotate-180 brightness-100",
+    id: "3",
+  },
+  {
+    title: "Android",
+    url: "../src/assets/icons8-android-os-96.png",
+    width: "w-15",
+    id: "21",
+  },
+];
+
+export const plataformas = {
+  PlayStation: [
+    { id: 187, name: "PlayStation 5" },
+    { id: 18, name: "PlayStation 4" },
+    { id: 16, name: "PlayStation 3" },
+    { id: 15, name: "PlayStation 2" },
+    { id: 27, name: "PlayStation" },
+    { id: 19, name: "PS Vita" },
+    { id: 17, name: "PSP" },
+  ],
+  Xbox: [
+    { id: 186, name: "Xbox Series S/X" },
+    { id: 1, name: "Xbox One" },
+    { id: 14, name: "Xbox 360" },
+    { id: 80, name: "Xbox" },
+  ],
+  Nintendo: [
+    { id: 7, name: "Nintendo Switch" },
+    { id: 8, name: "Nintendo 3DS" },
+    { id: 9, name: "Nintendo DS" },
+    { id: 13, name: "Nintendo DSi" },
+    { id: 10, name: "Wii U" },
+    { id: 11, name: "Wii" },
+    { id: 105, name: "GameCube" },
+    { id: 83, name: "Nintendo 64" },
+    { id: 24, name: "Game Boy Advance" },
+    { id: 43, name: "Game Boy Color" },
+    { id: 26, name: "Game Boy" },
+    { id: 79, name: "SNES" },
+    { id: 49, name: "NES" },
+  ],
+  PC: [
+    { id: 4, name: "PC" },
+    { id: 5, name: "macOS" },
+    { id: 6, name: "Linux" },
+  ],
+  iOS: [{ id: 3, name: "iOS" }],
+  Android: [{ id: 21, name: "Android" }],
+};
+
+export const genres = [
+  "action",
+  "indie",
+  "adventure",
+  "rpg",
+  "strategy",
+  "shooter",
+  "casual",
+  "simulation",
+  "puzzle",
+  "arcade",
+  "platformer",
+  "massively Multiplayer",
+  "racing",
+  "sports",
+  "fighting",
+];
